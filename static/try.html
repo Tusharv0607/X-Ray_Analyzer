@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="try.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap" rel="stylesheet">
+    <title>Try</title>
+</head>
+
+<body>
+    <div class="app__navbar">
+        <div class="app__navbar-left">
+            <h2 class="headText app__navbar-heading"><a href="index.html">Scan Genius</a></h2>
+        </div>
+        <div class="app__navbar-right">
+            <ul class="navbar-list">
+                <li class="navbar-list-items"><a href="try.html">Try</a></li>
+                <li class="navbar-list-items"><a href="about.html">About</a></li>
+                <li class="navbar-list-items"><a href="result.html">Resource</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="input">
+        <div class="input__head">
+            <h2 class="headText">X-Ray Analysis</h2>
+            <p class="text">Upload or Drop the Image of X-Ray. Only Images accepted.</p>
+        </div>
+
+        <form id="image-form" enctype="multipart/form-data">
+            <div class="uploadOuter">
+                <span class="dragBox" onclick="hidebutton(this)">
+                    <p class="p1">Select an image file to upload.</p>
+                    <p class="p2">or drag and drop it here</p>
+                    <input type="file" name="image" onChange="dragNdrop(event)" ondragover="drag()" ondrop="drop()"
+                        id="uploadFile" />
+                </span>
+            </div>
+            <div id="preview">
+
+            </div>
+
+            <!-- <label for="bodyPart" class="text-1">Select the body part. If you are not sure, leave it to us!</label> -->
+            <!-- <br>
+            <select name="bodyPart" id="bodyPart">
+                <option value="" selected>Select the body part...</option>
+                <option value="">Brain</option>
+                <option value="">Brain</option>
+                <option value="">Brain</option>
+            </select>
+            <br> -->
+            <button type="submit" class="btn" onclick="hidebutton(this)">Get Results</button>
+        </form>
+        <div id="caption">
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="try.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Handle form submission
+            $('#image-form').submit(function (event) {
+                event.preventDefault(); // Prevent default form submission behavior
+
+                // Create an FormData object that will contain the uploaded file
+                const formData = new FormData(this);
+
+                // Send an AJAX request to the Flask endpoint
+                $.ajax({
+                    url: '/predict',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (data) {
+                        // Display the generated caption on the page
+                        $('#caption').text(data.caption);
+                    },
+                    error: function () {
+                        // Display an error message if something goes wrong
+                        $('#caption').text('Error generating caption.');
+                    }
+                });
+
+                
+            });
+        });
+
+        function hidebutton(x) {
+            x.style.display = 'none';
+            document.getElementsByClassName("text").style.visibility="hidden";
+        }
+
+    </script>
+</body>
+
+</html>

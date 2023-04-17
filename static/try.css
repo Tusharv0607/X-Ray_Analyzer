@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFF5EA;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.headText{
+    color: #CD4949;
+    font-size: 45px;
+    font-weight: 700;
+    padding: 2rem;
+    text-align: center;
+}
+
+.app__navbar-heading{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.app__navbar-heading a{
+  text-decoration: none;
+  color: #CD4949;
+}
+
+.app__navbar{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.navbar-list{
+    display: flex;
+}
+
+.navbar-list-items{
+    list-style-type: none;
+    padding: 0 2rem;
+    font-weight: 500;
+    font-size: 25px;
+}
+.navbar-list-items a{
+    text-decoration: none;
+    color: black;
+}
+
+.text{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.text-1{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    padding: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+form select{
+    background-color:#F6D9D9;
+    padding: 0.2rem 15rem;
+    border: none;
+    color:#46464680;
+}
+
+.btn{
+    margin-top: 1rem;
+    background-color: #CD4949;
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.uploadOuter {
+    text-align: center;
+    padding: 20px;
+  }
+  strong {
+    padding: 0 10px
+  }
+  .dragBox {
+    width: 24vw;
+    height: 16vh;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    /* line-height: 24px; */
+    color: #999;
+    border: 2px dashed #ccc;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+  input[type="file"] {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+  }
+  .draging {
+    transform: scale(1.1);
+  }
+  #preview {
+    text-align: center;
+    
+  }
+  img {
+    max-width: 100%
+  }
+
+  .p1,.p2{
+    padding: 1rem;
+  }
+
+  .p1{
+    color: black;
+    font-size: 20px;
+  }
+
+  img{
+    width: 50%;
+  }
+
+  #caption{
+    font-size: 20px;
+    font-weight: 900;
+    color: #CD4949;
+    padding: 2rem;
+    text-align: center;
+  }

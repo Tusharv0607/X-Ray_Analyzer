@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFF5EA;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.headText{
+    color: #CD4949;
+}
+
+.app__navbar-heading a{
+    text-decoration: none;
+    color: #CD4949;
+}
+
+.app__navbar-heading{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.app__navbar{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.navbar-list{
+    display: flex;
+}
+
+.navbar-list-items{
+    list-style-type: none;
+    padding: 0 2rem;
+    font-weight: 500;
+    font-size: 25px;
+}
+.navbar-list-items a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.app__about-headBelowText{
+    padding: 2rem 3rem;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.app__about-developedby{
+    padding: 2rem;
+}
+
+.db{
+    font-weight: 700;
+    font-size: 45px;
+    
+}
+
+.text{
+    padding: 2rem 1rem;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image-1{
+    
+}
+
+.image-1 p{
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo{
+    height: 25vh;
+    width: 25vh;
+    background-color: #F3DADA;
+    border-radius: 5px;
+}
