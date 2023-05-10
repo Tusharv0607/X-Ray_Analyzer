@@ -119,7 +119,7 @@ form select{
   }
   #preview {
     text-align: center;
-    
+    max-width: 50%;
   }
   img {
     max-width: 100%
