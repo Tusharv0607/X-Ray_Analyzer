@@ -25,7 +25,7 @@ To run the website, you need the following dependencies:
 - Pandas
 
 ## Installation
-1. Clone the repository: git clone (https://github.com/Tusharv0607/AutoImageDescriptor.git)
+1. Clone the repository: git clone (https://github.com/Tusharv0607/X-Ray_Analyzer.git)
 2. Navigate to the project directory
 3. Install the required dependencies: pip install -r requirements.txt
 
