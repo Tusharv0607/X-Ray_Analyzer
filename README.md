@@ -8,10 +8,8 @@ X-Ray Analyzer is a web application that implements a deep learning model for ge
 - [Usage](#usage)
 - [Dataset](#dataset)
 - [Model Architecture](#model-architecture)
-- [Training](#training)
 - [Website Structure](#website-structure)
-- [Contributing](#contributing)
-- [License](#license)
+- [Contributions](#contributions)
 
 ## Introduction
 The X-Ray Analyzer provides an interactive platform for users to upload X-ray images and generate description for those images using a deep learning model. 
@@ -27,7 +25,7 @@ To run the website, you need the following dependencies:
 - Pandas
 
 ## Installation
-1. Clone the repository: git clone https://github.com/Tusharv0607/AutoImageDescriptor.git
+1. Clone the repository: git clone (https://github.com/Tusharv0607/AutoImageDescriptor.git)
 2. Navigate to the project directory
 3. Install the required dependencies: pip install -r requirements.txt
 
